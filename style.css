@@ -1,5 +1,6 @@
 header h1{
     text-align: center;
+
 }
 
 .main-div{
@@ -14,12 +15,13 @@ h2{
 }
 
 .main-div button{
-    margin: 2vw;
-    padding: 3vw;
+    margin: 10px;
+    padding: 10px;
     background-color: limegreen;
     border-radius: 8px;
     border: 1px solid limegreen;
     font-weight: 400;
+    font-size: 25px;
     
 }
 
@@ -38,3 +40,17 @@ h2{
 }
 
 
+@media screen and (max-width:899px) {
+    .main-div{
+        display: flex;
+        flex-direction: column;
+    }
+    header h1{
+        font-size: 1em;
+    }
+    .container{
+        width: 50vw;
+        height: 50vh;
+        margin: 1px auto;
+    }
+}

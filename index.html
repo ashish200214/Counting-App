@@ -36,8 +36,15 @@
         }   
         
         function decrement(){
+            if(count<=0){
+                count=0
+                countingH2.textContent = count; 
+            }
+            else{
+                
             count--;
             countingH2.textContent = count;
+            }
             
         }
 
