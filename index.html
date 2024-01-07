@@ -19,40 +19,13 @@
         </div>
         <div class="main-div">
             
-            <button class="inc" onclick="increment()">Increment</button>
-            <button class="dec" onclick="decrement()">Decrement</button>
-            <button class="reset" onclick="reset()">Reset</button>
+            <button  id="incBtn" >+</button>
+            <button  id="decBtn" >-</button>
+            <button  id="res">Reset</button>
         </div>
     </div>
-    <script>
-        let count=0;
-        let countingH2 = document.getElementById("counting");
-
-        function increment(){
-
-            count++;
-            countingH2.textContent = count;
-           
-        }   
-        
-        function decrement(){
-            if(count<=0){
-                count=0
-                countingH2.textContent = count; 
-            }
-            else{
-                
-            count--;
-            countingH2.textContent = count;
-            }
-            
-        }
-
-        function reset(){
-            count=0;
-            countingH2.textContent = count;
-            
-        }
+    <script src="./index.js">
+      
     </script>
 </body>
 </html>
