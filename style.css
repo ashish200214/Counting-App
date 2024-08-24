@@ -1,56 +1,95 @@
-header h1{
-    text-align: center;
-
+/* Global Styling */
+* {
+    font-family: 'Inter', sans-serif;
+    background-color: #fefaf0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.main-div{
+/* Header Styling */
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin: 1em 0;
+}
+
+/* Main Container */
+.main-div {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 2em 0;
+    gap: 1em;
 }
 
-h2{
+h2 {
     text-align: center;
-
+    font-size: 2em;
+    color: #444;
+    margin-bottom: 1.5em;
 }
 
-.main-div button{
+/* Button Styling */
+.main-div button {
     margin: 10px;
-    padding: 10px;
-    background-color: limegreen;
+    padding: 15px 25px;
+    background-color: #32cd32;
     border-radius: 8px;
-    border: 1px solid limegreen;
-    font-weight: 400;
-    font-size: 25px;
-    
+    border: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-*{
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    background-color: antiquewhite;
-
+.main-div button:hover {
+    background-color: #28a745;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
 }
 
-.container
-{
-    background-color: antiquewhite;
-    padding: 5px;
-    border: 3px solid grey;
+/* Container Styling */
+.container {
+    background-color: #fefaf0;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    width: 60vw;
+    margin: 2em auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
+.container:hover {
+    border-color: #888;
+}
 
-@media screen and (max-width:899px) {
-    .main-div{
-        display: flex;
+/* Responsive Design */
+@media screen and (max-width: 899px) {
+    .main-div {
         flex-direction: column;
+        gap: 0.5em;
     }
-    header h1{
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        width: 85vw;
+        padding: 15px;
+        margin: 1em auto;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .main-div button {
         font-size: 1em;
-    }
-    .container{
-        width: 50vw;
-        height: 50vh;
-        margin: 1px auto;
+        padding: 10px 20px;
     }
 }
